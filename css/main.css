@@ -1,0 +1,200 @@
+@font-face {
+  font-family: "poppins";
+  src: url(../fonts/Poppins-Bold.ttf);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  background: url(/images/b.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  position: relative;
+  color: white;
+  overflow: hidden;
+  overflow-y: hidden;
+  user-select: none;
+  user-zoom: none;
+}
+:root {
+  --accent-color: rgb(211, 179, 0);
+  --letter-spacing: 2px;
+  --main-color: rgb(31, 2, 13);
+}
+.overlay {
+  content: "";
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  opacity: 0.8;
+  position: absolute;
+  z-index: -1;
+}
+/**the navigation bar syling**/
+nav {
+  display: flex;
+  background-color: var(--accent-color);
+  justify-content: space-between;
+  height: 60px;
+}
+div {
+  display: flex;
+  margin-right: 10%;
+}
+nav div a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-family: "Poppins";
+  color: var(--main-color);
+  letter-spacing: var(--letter-spacing);
+  margin-right: 10px;
+  padding: 20px;
+}
+a:hover {
+  border-bottom: 3px solid white;
+  color: white;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  color: black;
+  font-weight: bold;
+  font-family: "Poppins";
+  font-size: 30px;
+  margin-left: 40px;
+}
+.logo span {
+  color: white;
+  border-right: 10px ridge white;
+  border-radius: 30px;
+  padding-right: 1px;
+}
+/** the form is styled here*/
+.main-form-box {
+  position: absolute;
+  margin-top: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  color: black;
+  padding: 15px 50px;
+}
+#bars {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  font-size: 40px;
+  display: none;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+.main-form-box form h2 {
+  font-family: "Poppins";
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+input {
+  display: block;
+  border: none;
+  background: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  padding: 10px;
+}
+#submit {
+  border: none;
+  border-radius: 30px;
+  background-color: var(--accent-color);
+  font-size: 18px;
+  font-family: "Poppins";
+}
+#submit:hover {
+  background: var(--main-color);
+  color: white;
+}
+label {
+  display: none;
+}
+.terms {
+  display: flex;
+  align-items: center;
+}
+
+.terms p {
+  margin-left: 10px;
+}
+/**for FORM validation*/
+.wrongInput {
+  border-color: red;
+}
+.CorrectInput {
+  border-color: green;
+}
+/**for the terms*/
+.wrongInput2 {
+  color: red;
+}
+.CorrectInput2 {
+  color: green;
+}
+
+/**MEDIA QUERY*/
+
+/**to remove the nav on small screen*/
+@media only screen and (max-width: 1100px) {
+  nav .nav {
+    right: 0;
+    position: absolute;
+    margin-left: 190px;
+  }
+  nav div a {
+    padding-bottom: 12px;
+    height: 10%;
+    width: 110px;
+  }
+  nav div a:last-child {
+    display: none;
+  }
+}
+@media only screen and (max-width: 950px) {
+  nav .nav {
+    left: 50px;
+  }
+  .logo {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 885px) {
+  nav .nav {
+    left: 1px;
+  }
+  .logo {
+    font-size: 23px;
+  }
+}
+@media only screen and (max-width: 837px) {
+  nav .nav {
+    display: none;
+  }
+  #bars {
+    display: flex;
+    margin-right: 90px;
+  }
+  .logo {
+    justify-content: center;
+    margin-left: 10%;
+  }
+  .logo {
+    font-size: 22px;
+  }
+}

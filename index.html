@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Fadiya Oluwapelumi" />
+    <meta name="description" content="Sign up page for EasyBuy" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <title>EASY BUY</title>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <nav>
+      <!--firstlets create a typo-logo -->
+      <div class="logo">
+        EASY<span>BUY<i class="fa fa-shopping-cart"></i></span>
+      </div>
+      <!--then our navigation buttons-->
+      <div class="nav">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Services</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <i class="fa fa-bars" id="bars"></i>
+    </nav>
+    <div class="main-form-box">
+      <form action="" class="form">
+        <h2>Sign Up</h2>
+        <label for="email">Email</label>
+        <!--the input field for the EMAIL-->
+        <input type="email" name="Email" class="email" placeholder="Email" />
+
+        <label for="Username">Username</label>
+        <!--the input field for the USERNAME-->
+        <input
+          type="text"
+          name="Username"
+          id="username"
+          placeholder="Username"
+        />
+
+        <label for="DOB">Date Of Birth</label>
+        <!--the input field for the DOB-->
+        <input
+          type="date"
+          name="date"
+          id="DOB"
+          placeholder="Date Of Birth"
+          value=""
+          min="01-01-1997"
+          max="31-01-2030"
+        />
+
+        <label for="Select-Password">Password</label>
+        <!--the input field for the PASSWORD1-->
+        <input
+          type="password"
+          name="Select-Password"
+          id="password1"
+          placeholder="Password"
+        />
+
+        <label for="Select-Password2">Confirm Password</label>
+        <!--the input field for the PASSWORD2-->
+        <input
+          type="password"
+          name="Select-Password2"
+          id="password2"
+          placeholder="Confirm Password"
+        />
+
+        <div class="terms">
+          <input type="checkbox" name="confirmTerms" class="termss" />
+          <p for="confirm-terms" class="label-terms">
+            Confirm that you've read the term and condition
+          </p>
+        </div>
+        <br />
+        <input type="submit" value="Sign Up" id="submit" />
+      </form>
+    </div>
+    <script src="../sign up folder/js/file.js"></script>
+  </body>
+</html>
